@@ -1,0 +1,101 @@
+*{
+    color: #fff;
+    background-color: #28c16f;
+    margin: 10px 15px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 70px;
+}
+
+nav > a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
+    background-color: #1c683f;
+    font-weight: 600;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.texto > p {
+    font-size: 40px;
+    font-weight: 800;
+    color: #1c683f;
+}
+
+img#astronauta{
+    width: 550px;
+    animation: moverAstronauta 5s ease-in-out infinite;
+}
+
+@keyframes moverAstronauta{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 700px) {
+    *{
+        margin: 10px 10px;
+    }
+
+    header{
+        margin-left: 20px;
+    }
+
+    main{
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav{
+        display: none;
+    }
+
+    h2{
+        color: red;
+    }
+
+    section.texto > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button{
+        margin: 40px 0px;
+    }
+
+    img#astronauta{
+        width: 350px;
+    }
+}

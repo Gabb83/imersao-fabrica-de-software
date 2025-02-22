@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e9f4ff;
+    background: linear-gradient(135deg, #e9f4ff,#3a6cff);
+}
+
+section.container{
+    background-color: #e9f4ff;
+    border: none;
+    border-radius: 25px;
+    padding: 3rem;
+}
+
+section > h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div.div-numeros{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+input{
+    height: 1.8rem;
+    background-color: #8cbeff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+select{
+    border-radius: 100px;
+    width: 3rem;
+}
+
+div.div-resultado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button{
+    background-color: #3a6cff;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    width: 9rem;
+    height: 2.3rem;
+    cursor: pointer;
+}
+
+div.div-resultado > h2{
+    border: 1px outset black;
+    border-radius: 5px;
+    width: 252.45px;
+    height: 32.19px;
+    padding: 0.1rem;
+}
+
+div.subtitulo-historico{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+img#imagem-historico{
+    width: 25px;
+}
+
+.operacoes-historico{
+    margin-top: 0.5rem;
+}
+
+#historicoOperacao{
+    line-height: 30px;
+}
+
+@media (max-width: 530px) {
+    .container{
+        width: 250px;
+        padding: 0px;
+    }
+
+    input{
+        width: 100px;
+    };
+}

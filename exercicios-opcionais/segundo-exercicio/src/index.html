@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>Segundo Exércicio</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h2>Calculadora</h2>
+            <form>
+                <div class="div-numeros">
+                    <input type="number" id="valor1">
+                    <select name="" id="selecionaOperacao">
+                        <option value="soma">+</option>
+                        <option value="subtrai">-</option>
+                        <option value="multiplica">*</option>
+                        <option value="divide">/</option>
+                    </select>
+                    <input type="number" id="valor2">
+                </div>
+                <div class="div-resultado">
+                    <button type="button" onclick="realizaCalculo()">Calcular</button>
+                    <h2 id="mostraResultado"></h2>
+                </div>
+                <div class="div-historico">
+                    <div class="subtitulo-historico">
+                        <img
+                            id="imagem-historico"
+                            src="/exercicios-opcionais/segundo-exercicio/assets/image-historico.png"
+                            alt="ícone de histórico"
+                        >
+                        <h2>Histórico</h2>
+                    </div>
+                    <div class="operacoes-historico">
+                        <ul id="historicoOperacao"></ul>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
